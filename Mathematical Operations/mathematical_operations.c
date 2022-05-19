@@ -2,29 +2,21 @@
 
 int main() {
   
-  int numOfBooks =10;
-  char favLetter ='a';
-  char favDigit = '7';
-  double costOfCandyBar=7.50;
+  int booksSold = 100;
+  double bookCost = 9.99;
+  double totalSalesValue;
 
-  printf("Number of books: %d\n", numOfBooks);
-  printf("Your Favorite Letter is: %c\n", favLetter);
-  printf("Your Favorite Digit is: %c\n", favDigit);
-  printf("You expect to pay $%.2f for a candy bar.\n", costOfCandyBar);
+  booksSold+=200;
+  totalSalesValue=booksSold*bookCost;
+  totalSalesValue/=2;
 
-  char targetChar;
-  int sourceInt = 99;
-  double sourceDouble = 55.67;
+  printf("You sold %d books and your take home was $%.2f\n", booksSold, totalSalesValue);
 
-  // Cast here
-  targetChar= (char)sourceInt ;
-  targetChar= sourceDouble;
-  printf("source int %d, source double, %.2f, target %c\n", sourceInt, sourceDouble, targetChar);  
+  int x = 5;
+  int y = 42;
 
-    // const: can not change value of variable
-  const double SPEEDOFLIGHT = 1.86;
-  int timeTraveledInSeconds = 30;
-  printf("Light would travel %.2f miles in %d seconds\n", SPEEDOFLIGHT * 100000 * timeTraveledInSeconds, timeTraveledInSeconds);
-
+  if (x  <y) {
+  printf("Congratulations on setting up a comparison correctly!");
+  }
 
 }
